@@ -2,9 +2,8 @@ package com.example.bootuserserviceprovider.service;
 
 
 
+import com.alibaba.dubbo.config.annotation.Service;
 import entity.UserAddress;
-import org.apache.dubbo.config.annotation.Service;
-import org.springframework.stereotype.Component;
 import service.UserService;
 
 import java.util.Arrays;
@@ -13,7 +12,7 @@ import java.util.List;
 /**
  * 用户服务提供查询地址：查询所有用户地址，此处写死
  */
-// @Service 暴露服务
+// @Service dubbo暴露服务
 @Service
 public class UserServiceImpl implements UserService {
 

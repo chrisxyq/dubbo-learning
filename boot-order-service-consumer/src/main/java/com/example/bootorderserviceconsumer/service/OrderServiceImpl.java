@@ -1,7 +1,7 @@
 package com.example.bootorderserviceconsumer.service;
 
+import com.alibaba.dubbo.config.annotation.Reference;
 import entity.UserAddress;
-import org.apache.dubbo.config.annotation.Reference;
 import org.springframework.stereotype.Service;
 import service.OrderService;
 import service.UserService;

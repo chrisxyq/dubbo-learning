@@ -24,6 +24,13 @@
     </dubbo:service>
     <!-- 服务的实现 -->
     <bean id="userServiceImpl" class="service.impl.UserServiceImpl"></bean>
+
+    <dubbo:service interface="service.UserService"
+                   ref="userServiceImpl2" version="2.0.0">
+        <dubbo:method name="getUserAddressList"></dubbo:method>
+    </dubbo:service>
+    <!-- 服务的实现 -->
+    <bean id="userServiceImpl2" class="service.impl.UserServiceImpl2"></bean>
 <!--    &lt;!&ndash;统一设置服务提供方的规则  &ndash;&gt;-->
 <!--    <dubbo:provider timeout="1000"></dubbo:provider>-->
 
